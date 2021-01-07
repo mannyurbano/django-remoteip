@@ -6,7 +6,6 @@ resource "aws_vpc" "main" {
   enable_dns_hostnames = "true"
   tags = {
     Name = "main"
-    Project = "JobApplication2021"
   }
 }
 
@@ -18,7 +17,6 @@ resource "aws_subnet" "main-public-1" {
   availability_zone = "us-east-1a"
   tags = {
     Name = "main-public-1"
-    Project = "JobApplication2021"
   }
 }
 
@@ -29,7 +27,6 @@ resource "aws_subnet" "main-public-2" {
   availability_zone = "us-east-1b"
   tags = {
     Name = "main-public-2"
-    Project = "JobApplication2021"
   }
 }
 
@@ -42,7 +39,6 @@ resource "aws_subnet" "main-private-1" {
 
   tags = {
     Name = "main-private-1"
-    Project = "JobApplication2021"
   }
 }
 
@@ -54,7 +50,6 @@ resource "aws_subnet" "main-private-2" {
 
   tags = {
     Name = "main-private-2"
-    Project = "JobApplication2021"
   }
 }
 
@@ -72,7 +67,6 @@ resource "aws_nat_gateway" "nat-gw" {
 
   tags = {
     Name = "main-nat"
-    Project = "JobApplication2021"
   }
 
 }
@@ -83,7 +77,6 @@ resource "aws_internet_gateway" "main-gw" {
 
   tags = {
     Name = "main"
-    Project = "JobApplication2021"
   }
 }
 
@@ -97,7 +90,6 @@ resource "aws_route_table" "main-public" {
 
   tags = {
     Name = "main-public-1"
-    Project = "JobApplication2021"
   }
 }
 
@@ -111,7 +103,6 @@ resource "aws_route_table" "main-private" {
 
   tags = {
     Name = "main-private-1"
-    Project = "JobApplication2021"
   }
 }
 
