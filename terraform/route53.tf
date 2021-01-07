@@ -1,8 +1,8 @@
 ### APP.MANNYURBANO - PUBLIC
 
 resource "aws_route53_record" "app" {
-  zone_id = "Z03628411DFCR8STUKXFK"
-  name    = "app.mannyurbano.com"
+  zone_id = "id"
+  name    = "fqdn"
   type    = "A"
 
   alias {
@@ -15,8 +15,8 @@ resource "aws_route53_record" "app" {
 ### BACKEND.APP.MANNYURBANO - PRIVATE
   
 resource "aws_route53_record" "backend" {
-  zone_id = "Z06527112UPFNG74RKEP9"
-  name    = "backend.app.mannyurbano.com"
+  zone_id = "id"
+  name    = "fqdn"
   type    = "A"
 
   alias {
