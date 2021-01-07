@@ -5,13 +5,6 @@ resource "aws_launch_template" "api-launchtemplate" {
   vpc_security_group_ids = [aws_security_group.api-instance-securitygroup.id]
 
   key_name = "Key1"
-
-#  user_data = "${base64encode(data.template_file.api-shell-script.rendered)}"
-#
-#  iam_instance_profile {
-#    name = aws_iam_instance_profile.CloudWatchAgentServerRole-instanceprofile.name
-#  }
-
 }
 
 resource "aws_autoscaling_group" "api-autoscaling" {
