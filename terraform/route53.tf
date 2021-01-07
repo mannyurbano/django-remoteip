@@ -1,4 +1,4 @@
-### APP.MANNYURBANO - PUBLIC
+### PUBLIC
 
 resource "aws_route53_record" "app" {
   zone_id = "id"
@@ -12,7 +12,7 @@ resource "aws_route53_record" "app" {
   }
 }
 
-### BACKEND.APP.MANNYURBANO - PRIVATE
+### PRIVATE
   
 resource "aws_route53_record" "backend" {
   zone_id = "id"
