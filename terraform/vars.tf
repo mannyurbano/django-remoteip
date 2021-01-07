@@ -11,35 +11,20 @@ variable "AWS_REGION" {
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "/home/manuel/Documents/Keys/n26/key1"
+  default = "/"
 }
 
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "/home/manuel/Documents/Keys/n26/key1.pub"
+  default = "/"
 }
 
 variable "API_INSTANCE_AMI"{
-  default = "ami-07d8ba21b6e6141cf"
+  default = "ami-id"
   }
 
 variable "WEB_INSTANCE_AMI"{
-  default = "ami-0894e8b4637b50afe"
+  default = "ami-id"
   }
-
-variable "AMIS" {
-  type = map
-  default = {
-    us-east-1 = "ami-028734ac51ff6ab87"
-  }
-}
-
-variable "INSTANCE_USERNAME" {
-  default = "ec2-user"
-}
-
-variable "INSTANCE_DEVICE_NAME" {
-  default = "/dev/xvdh"
-}
 
 variable "JENKINS_VERSION" {
   default = "2.164"
