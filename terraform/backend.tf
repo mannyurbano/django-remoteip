@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "mannyurbano-bucket"
-    key    = "terraform/3-tier-webapp-state/"
+    bucket = "bucket name"
+    key    = "path"
     region = "us-east-1"
   }
 }
